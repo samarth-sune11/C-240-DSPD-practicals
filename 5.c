@@ -91,8 +91,11 @@ int main()
 {
 	struct node*root=NULL;
 	int i,k,data,n;
-	printf("enter number of nodes: ");
-	scanf("%d",&n);
+	
+	
+	// while loop
+
+	
 	for(i=0;i<n;i++)
 	{
 		printf("\n enter value of %d node:",i+1);
@@ -111,3 +114,4 @@ int main()
 	search(root,k);
 	return 0;
 }
+
