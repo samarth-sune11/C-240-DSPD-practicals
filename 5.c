@@ -93,16 +93,14 @@ int main()
 	int i,k,data,n;
 	
 	
-	// while loop
+	printf("Enter node values (0 for stop):\n");
 
-	
-	for(i=0;i<n;i++)
-	{
-		printf("\n enter value of %d node:",i+1);
-		scanf("%d",&data);
-		
-		root=insert(root,data);
+	do {
+		scanf("%d" , &data);
+		root = insert(root, data);
 	}
+	while(value!=0)
+		
 	printf("\n inorder traversal:");
 	inorder(root);
 	printf("\n preorder traversal:");
@@ -114,4 +112,5 @@ int main()
 	search(root,k);
 	return 0;
 }
+
 
