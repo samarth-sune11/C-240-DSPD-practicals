@@ -99,7 +99,7 @@ int main()
 		scanf("%d" , &data);
 		root = insert(root, data);
 	}
-	while(value!=0)
+	while(data!=0)
 		
 	printf("\n inorder traversal:");
 	inorder(root);
@@ -112,5 +112,6 @@ int main()
 	search(root,k);
 	return 0;
 }
+
 
 
