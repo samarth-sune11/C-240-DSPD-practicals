@@ -91,15 +91,14 @@ int main()
 {
 	struct node*root=NULL;
 	int i,k,data,n;
-	printf("enter number of nodes: ");
-	scanf("%d",&n);
-	for(i=0;i<n;i++)
+	do
 	{
-		printf("\n enter value of %d node:",i+1);
+		printf("\n enter data to insert(0 to stop): ");
 		scanf("%d",&data);
 		
 		root=insert(root,data);
 	}
+	while(data!=0);
 	printf("\n inorder traversal:");
 	inorder(root);
 	printf("\n preorder traversal:");
